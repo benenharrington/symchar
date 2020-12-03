@@ -1,3 +1,4 @@
+from math import factorial
 import numpy as np
 
 from .partition import size_of_conjugacy_class_in_symmetric_group
