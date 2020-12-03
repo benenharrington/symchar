@@ -28,9 +28,9 @@ def list_join(dictionary, list_of_dictionaries):
         return []
     if list_of_dictionaries == [{}]:
         return [dictionary]
-    return [join(dictionary, list_member) for list_member in list_of_dictionaries]
+    return [recursive_join(dictionary, list_member) for list_member in list_of_dictionaries]
 
-def join(dictionary_1, dictionary_2):
+def recursive_join(dictionary_1, dictionary_2):
     return {**dictionary_1, **{key+1: value for key, value in dictionary_2.items()}}
 
 def coefficient_of_A(mu, nu):
