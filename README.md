@@ -6,7 +6,7 @@ Symchar is a python package for generating character tables of symmetric groups.
                 [-1,  0,  2],
                 [ 1, -1,  1]])
 
-There is also some support for basic operations on characters, such as decomposing the tensor product.
+There is some support for basic operations on characters, such as decomposing the tensor product.
 
     >>> _.tensor_product_decomposition(_[1], _[1])
     {[3]: 1, [2, 1]: 1, [1, 1, 1]: 1}
