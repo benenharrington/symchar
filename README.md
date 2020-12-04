@@ -13,4 +13,4 @@ There is some support for basic operations on characters, such as decomposing th
 
 The method for constructing the character table follows Lecture 6 of G.D. James' _The Representation Theory of Symmetric Groups_. 
 
-This was a toy project to generate data for  [link-to-ml-kronecker-coefficents]. This only required character tables up to n=15, which takes a few seconds with symchar. If you want to work with larger symmetric groups, you should probably use something like GAP. 
+This was a toy project to generate data for [an ML project on predicting kronecker coefficients](https://github.com/benenharrington/transformer-kronecker-coefficients). This only required character tables up to n=15, which takes a few seconds with symchar. If you want to work with larger symmetric groups, you should probably use something like GAP. 
