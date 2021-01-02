@@ -11,7 +11,9 @@ def get_partition_covers(mu, nu):
     """
     A cover of mu by nu is a function f from the set of rows of mu to the power set
     of the set of rows of nu such that the elements of each f(mu_i) sum to mu_i and 
-    the disjoint union of the f(mu_i) make up nu.
+    the disjoint union of the f(mu_i) make up nu. We represent such a cover by a 
+    dictionary d where (mu_i, a_i) is  a key-value pair in d if and only if 
+    f(mu_i) = a_i
     """
     if not mu:
         return [{}]
@@ -34,6 +36,9 @@ def recursive_join(dictionary_1, dictionary_2):
 
 def coefficient_of_A(mu, nu):
     return sum([contribution_from_cover(cover) for cover in get_partition_covers(mu, nu)])
+
+def construct_A(partitions):
+    return np.array([[coefficient_of_A(mu, nu) for nu in partitions] for mu in partitions], dtype='object')
 
 def construct_B(A, n, partitions):
     B = np.zeros(A.shape, dtype='object')
