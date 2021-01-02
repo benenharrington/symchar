@@ -2,7 +2,6 @@ from functools import reduce
 from math import factorial, sqrt
 import numpy as np
 
-from .character_table import CharacterTable
 from .partition import Partition, generate_partitions, size_of_conjugacy_class_in_symmetric_group
 
 def contribution_from_cover(cover):

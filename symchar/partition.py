@@ -33,12 +33,7 @@ class Partition(list):
     
     def delete_first_row(self):
         return Partition(self[1:])
-    
-    def greater_than(self, nu):
-        i = 0 
-        while i < self.height and self[i] >= nu[i]:
-            i += 1
-        return i == self.height
+
 
 def next_partition(partition):
     """
