@@ -12,7 +12,7 @@ There is some support for basic operations on characters, such as decomposing th
     >>> c.tensor_product_decomposition(c[1], c[1])
     {[3]: 1, [2, 1]: 1, [1, 1, 1]: 1}
 
-The rows and columns of the character table of S_n are indexed by the partitions of n with respect to the dominance order, but you can also look up characters by passing a Partition object:
+The rows and columns of the character table of S_n are indexed by the partitions of n with respect to the dominance order, but you can also look up characters by passing a Partition object.
 
     from symchar import Partition
     >>> mu = Partition([2, 1])
